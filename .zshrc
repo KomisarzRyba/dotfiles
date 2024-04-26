@@ -70,7 +70,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-auto-fetch git-commit gh sudo safe-paste tmux dotenv please ripgrep rust zoxide starship)
+plugins=(git git-auto-fetch git-commit gh sudo safe-paste tmux dotenv please ripgrep fzf rust zoxide starship)
+
+export FZF_BASE=$(which fzf)
 
 source $ZSH/oh-my-zsh.sh
 
